@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120849556-1"></script>
+
+<script>
+  if (!window.location.href.includes('http://localhost')) {
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120849556-1');
+
+    function sendClick(label, category='Social') {
+      gtag('event', 'click', {
+        transport: 'beacon',
+        event_category: category,
+        event_label: label
+      });
+    }
+  }
+</script>
+
+  <meta charset="UTF-8">
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<link rel="canonical" href="https://marina-ferreira.github.io/projects/js/memory-game/" />
+<base href="https://marina-ferreira.github.io/">
+
+  
+
+  
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon-180x180.png">
+
+
+<link rel="manifest" href="img/favicon/manifest.json">
+
+
+<link rel="mask-icon" href="img/favicon/favicon.svg" color="#42ffa3">
+
+
+<meta name="msapplication-TileColor" content="#b91d47">
+<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="shortcut icon" href="img/favicon/favicon.ico">
+
+
+  <title>Memory Game (Tutorial Demo)</title>
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/kimbie.dark.min.css">
+  <link rel="stylesheet" href="/styles.min.css" type="text/css">
+  <link rel="alternate" type="application/rss+xml" href="https://marina-ferreira.github.io/index.xml" title="Memory Game (Tutorial Demo)">
+</head>
+<body class="markdown projects ">
+  
+    <a class="go-back"
+   href="javascript:;"
+   onClick="history.go(-1)"><span class="arrow"></span></a>
+
+    <nav class="single-navigation">
+  <a href="javascript:;" class="nav-toggle burger">☰</a>
+  <a href="javascript:;" class="nav-toggle exit">╳</a>
+
+  <ul class="nav-list">
+    
+      
+
+      <li class="nav-item">
+
+        <a href="https://github.com/marina-ferreira/memory-game-%28tutorial-demo%29"
+           class="nav-link"
+           target="_blank">Repo</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="https://marina-ferreira.github.io/memory-game"
+           class="nav-link"
+           target="_blank">Project</a>
+      </li>
+
+      
+    
+
+    <li class="nav-item home">
+      <a href="/"
+         class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="/projects"
+         class="nav-link">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a href="/tutorials"
+         class="nav-link">Tutorials & Notes</a>
+    </li>
+  </ul>
+</nav>
+
+  
+
+  <div class="container">
+    
+  
+
+  
+
+  <div class='project-wrapper '>
+    <iframe src="https://marina-ferreira.github.io/memory-game/"></iframe>
+
+    <ul class="contact-icons">
+  <li class="contact-item">
+    <a href="https://twitter.com/codesketchlab"
+       class="contact-link" target="_blank"
+       onclick="sendClick('twitter')">
+
+    <img src="img/social/twitter.png"
+         class="contact-image" alt="Code Sketch Twitter">
+    </a>
+  </li>
+  <li class="contact-item">
+    <a href="https://www.facebook.com/codesketchlab/"
+       class="contact-link" target="_blank"
+       onclick="sendClick('facebook')">
+
+    <img src="img/social/facebook.png"
+         class="contact-image" alt="Code Sketch Facebook">
+    </a>
+  </li>
+  <li class="contact-item youtube">
+    <a href="https://www.youtube.com/channel/UCHFmShpjG-8N52O0JD2ut3A"
+       class="contact-link" target="_blank"
+       onclick="sendClick('youtube')">
+
+    <img src="img/social/youtube.png"
+         class="contact-image large" alt="Code Sketch Channel Youtube">
+    </a>
+  </li>
+  <li class="contact-item">
+    <a href="https://medium.com/@marina.ferreira.developer"
+       class="contact-link" target="_blank"
+       onclick="sendClick('medium')">
+
+    <img src="img/social/medium.png"
+         class="contact-image" alt="Medium">
+    </a>
+  </li>
+  <li class="contact-item github">
+    <a href="https://github.com/marina-ferreira/"
+       class="contact-link" target="_blank"
+       onclick="sendClick('github')">
+
+    <img src="img/social/github.png"
+         class="contact-image large" alt="Code Sketch Github">
+    </a>
+  </li>
+  <li class="contact-item linkedin">
+    <a href="https://linkedin.com/in/marinaferreiradeveloper/"
+       class="contact-link" target="_blank"
+       onclick="sendClick('linkedin')">
+
+    <img src="img/social/linkedin.png"
+         class="contact-image" alt="Linkedin">
+    </a>
+  </li>
+  <li class="contact-item  mail">
+    <a href="mailto:marina.ferreira.developer@gmail.com"
+       class="contact-link"
+       onclick="sendClick('mail')">
+
+    <img src="img/social/mail.png"
+         class="contact-image" alt="Send Mail">
+    </a>
+  </li>
+
+
+</ul>
+
+
+    <div class="tutorial-links">
+      
+        <a href="https://www.youtube.com/watch?v=eMhiMsEC9Uk&amp;list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw"
+           class="link video-link"
+           target="_blank"
+           onclick="sendClick('video-tutorial', 'tutorial')">
+
+          <img src="img/social/youtube-red.png" class="link-icon" alt="Video Icon">
+          <span>Video Tutorial</span>
+        </a>
+      
+
+      
+        <a href="https://medium.freecodecamp.org/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae"
+           class="link written-link"
+           target="_blank"
+           onclick="sendClick('medium-tutorial', 'tutorial')">
+
+           <img src="img/social/note.png" class="link-icon" alt="Note icon">
+           <span>Written Tutorial</span>
+        </a>
+      
+    </div>
+  </div>
+
+  <div class="markdown-wrapper">
+    <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+
+  &lt;title&gt;Memory Game&lt;/title&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;section class=&quot;memory-game&quot;&gt;
+    &lt;div class=&quot;memory-card&quot; data-framework=&quot;aurelia&quot;&gt;
+      &lt;img class=&quot;front-face&quot; src=&quot;img/aurelia.svg&quot; alt=&quot;Aurelia&quot; /&gt;
+      &lt;img class=&quot;back-face&quot; src=&quot;img/js-badge.svg&quot; alt=&quot;JS Badge&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;memory-card&quot; data-framework=&quot;aurelia&quot;&gt;
+      &lt;img class=&quot;front-face&quot; src=&quot;img/aurelia.svg&quot; alt=&quot;Aurelia&quot; /&gt;
+      &lt;img class=&quot;back-face&quot; src=&quot;img/js-badge.svg&quot; alt=&quot;JS Badge&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;memory-card&quot; data-framework=&quot;vue&quot;&gt;
+      &lt;img class=&quot;front-face&quot; src=&quot;img/vue.svg&quot; alt=&quot;Vue&quot; /&gt;
+      &lt;img class=&quot;back-face&quot; src=&quot;img/js-badge.svg&quot; alt=&quot;JS Badge&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;memory-card&quot; data-framework=&quot;vue&quot;&gt;
+      &lt;img class=&quot;front-face&quot; src=&quot;img/vue.svg&quot; alt=&quot;Vue&quot; /&gt;
+      &lt;img class=&quot;back-face&quot; src=&quot;img/js-badge.svg&quot; alt=&quot;JS Badge&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;memory-card&quot; data-framework=&quot;angular&quot;&gt;
+      &lt;img class=&quot;front-face&quot; src=&quot;img/angular.svg&quot; alt=&quot;Angular&quot; /&gt;
+      &lt;img class=&quot;back-face&quot; src=&quot;img/js-badge.svg&quot; alt=&quot;JS Badge&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;memory-card&quot; data-framework=&quot;angular&quot;&gt;
+      &lt;img class=&quot;front-face&quot; src=&quot;img/angular.svg&quot; alt=&quot;Angular&quot; /&gt;
+      &lt;img class=&quot;back-face&quot; src=&quot;img/js-badge.svg&quot; alt=&quot;JS Badge&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;memory-card&quot; data-framework=&quot;ember&quot;&gt;
+      &lt;img class=&quot;front-face&quot; src=&quot;img/ember.svg&quot; alt=&quot;Ember&quot; /&gt;
+      &lt;img class=&quot;back-face&quot; src=&quot;img/js-badge.svg&quot; alt=&quot;JS Badge&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;memory-card&quot; data-framework=&quot;ember&quot;&gt;
+      &lt;img class=&quot;front-face&quot; src=&quot;img/ember.svg&quot; alt=&quot;Ember&quot; /&gt;
+      &lt;img class=&quot;back-face&quot; src=&quot;img/js-badge.svg&quot; alt=&quot;JS Badge&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;memory-card&quot; data-framework=&quot;backbone&quot;&gt;
+      &lt;img class=&quot;front-face&quot; src=&quot;img/backbone.svg&quot; alt=&quot;Backbone&quot; /&gt;
+      &lt;img class=&quot;back-face&quot; src=&quot;img/js-badge.svg&quot; alt=&quot;JS Badge&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;memory-card&quot; data-framework=&quot;backbone&quot;&gt;
+      &lt;img class=&quot;front-face&quot; src=&quot;img/backbone.svg&quot; alt=&quot;Backbone&quot; /&gt;
+      &lt;img class=&quot;back-face&quot; src=&quot;img/js-badge.svg&quot; alt=&quot;JS Badge&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;memory-card&quot; data-framework=&quot;react&quot;&gt;
+      &lt;img class=&quot;front-face&quot; src=&quot;img/react.svg&quot; alt=&quot;React&quot; /&gt;
+      &lt;img class=&quot;back-face&quot; src=&quot;img/js-badge.svg&quot; alt=&quot;JS Badge&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;memory-card&quot; data-framework=&quot;react&quot;&gt;
+      &lt;img class=&quot;front-face&quot; src=&quot;img/react.svg&quot; alt=&quot;React&quot; /&gt;
+      &lt;img class=&quot;back-face&quot; src=&quot;img/js-badge.svg&quot; alt=&quot;JS Badge&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;script src=&quot;scripts.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<pre><code class="language-css">* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #060AB2;
+}
+
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #1C7CCC;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+</code></pre>
+
+<pre><code class="language-js">const cards = document.querySelectorAll('.memory-card');
+
+let hasFlippedCard = false;
+let lockBoard = false;
+let firstCard, secondCard;
+
+function flipCard() {
+  if (lockBoard) return;
+  if (this === firstCard) return;
+
+  this.classList.add('flip');
+
+  if (!hasFlippedCard) {
+    hasFlippedCard = true;
+    firstCard = this;
+
+    return;
+  }
+
+  secondCard = this;
+  checkForMatch();
+}
+
+function checkForMatch() {
+  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+
+  isMatch ? disableCards() : unflipCards();
+}
+
+function disableCards() {
+  firstCard.removeEventListener('click', flipCard);
+  secondCard.removeEventListener('click', flipCard);
+
+  resetBoard();
+}
+
+function unflipCards() {
+  lockBoard = true;
+
+  setTimeout(() =&gt; {
+    firstCard.classList.remove('flip');
+    secondCard.classList.remove('flip');
+
+    resetBoard();
+  }, 1500);
+}
+
+function resetBoard() {
+  [hasFlippedCard, lockBoard] = [false, false];
+  [firstCard, secondCard] = [null, null];
+}
+
+(function shuffle() {
+  cards.forEach(card =&gt; {
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos;
+  });
+})();
+
+cards.forEach(card =&gt; card.addEventListener('click', flipCard));
+</code></pre>
+
+  </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/typescript.min.js"></script>
+  <script src="/scripts.min.js"></script>
+</body>
+</html>
